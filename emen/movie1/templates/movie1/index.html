@@ -1,0 +1,9 @@
+{% include 'movie1/header.html' %}
+
+<ul class="list-group">
+    {% for a in all_movies%}
+    <li class="list-group-item">
+        <a href="{% url 'song-detail' movie_id=a.id %}" > {{ a.actor }}</a>
+    </li>
+    {% endfor %}
+</ul>

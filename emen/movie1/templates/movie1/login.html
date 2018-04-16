@@ -1,0 +1,16 @@
+{% include 'movie1/header.html' %}
+
+{% load static %}
+
+<head>
+    <a href="http://127.0.0.1:8000/register/">Register</a>
+    <meta charset="UTF-8">
+    <title></title>
+    <h2>Login to enter</h2>
+</head>
+   <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+   </form>
+ </body>

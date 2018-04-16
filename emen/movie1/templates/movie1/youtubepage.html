@@ -1,0 +1,16 @@
+{% include 'movie1/header.html' %}
+
+<form enctype="multipart/form-data" method="post" action="{% url 'basic_upload' %}">
+    {% csrf_token %}
+    {{ form }}
+    <h4>TITTLE:<input type="text" name="tittle"/></h4>
+    <p><input type="submit" value="upload"/></p>
+</form>
+
+<h2>CHANNEL: DJ PANESAR </h2>
+<p>UPLOADS:</p>
+    {% for item in all_data.items %}
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/{{item.contentDetails.upload.videoId}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    {% endfor %}
+
+
