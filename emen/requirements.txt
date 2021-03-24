@@ -39,7 +39,7 @@ python-openid==2.2.5
 pytz==2017.3
 requests==2.6.0
 requests-oauthlib==0.8.0
-rsa==3.4.2
+rsa==4.1
 six==1.11.0
 suds==0.4
 unity-lens-photos==1.0
