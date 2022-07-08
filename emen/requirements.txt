@@ -41,7 +41,7 @@ requests==2.6.0
 requests-oauthlib==0.8.0
 rsa==3.4.2
 six==1.11.0
-suds==0.4
+suds==1.0.0
 unity-lens-photos==1.0
 uritemplate==3.0.0
 urllib3==1.22
